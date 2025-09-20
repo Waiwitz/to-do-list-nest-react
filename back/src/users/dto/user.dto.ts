@@ -1,10 +1,11 @@
 import { IsEmail, IsNotEmpty, IsOptional } from 'class-validator';
 
 export class UserDto {
-  id: string;
+  id: number;
   email: string;
-  name: string;
-  age: number;
+  fname: string;
+  lname: string;
+  birthday: Date;
 }
 
 export class RegisterUserDTO {
